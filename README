@@ -1,0 +1,20 @@
+sb-directory
+------------
+
+A suite of directory walking and sizing functions in Common Lisp using
+the sb-posix routines of SBCL:
+
+    directory-p - is this string a dir
+    mapdir - call fn on all entries in dir
+    dirsize - amount of bytes in dir
+    dirusage - amount of bytes in and under dir
+    dirwalk - call fn on all directories under dir
+    du - return ((name . bytes) ..) of all directories under dir
+
+All paths are strings.
+
+Licence: BSD
+
+Burton Samograd
+burton.samograd AT gmail.com
+2015

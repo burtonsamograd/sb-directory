@@ -1,0 +1,12 @@
+;;; -*- lisp -*- system definition
+
+(in-package #:asdf)
+;;; I (Joerg Hoehle) totally object ASDF's cluttering my package list
+;;; with dozens of tiny definition packages and even more so the
+;;; typically empty ASDFNNNN packages. Please give me some package
+;;; like ASDF-SYSTEMS or -USER to throw in such trivial definitions.
+  
+(defsystem :sb-directory
+    :description "A suite of functions to walk and get information
+    about directories for SBCL."
+    :components ((:file "sb-directory" :depends-on "sb-posix")))
